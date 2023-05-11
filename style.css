@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: grey;
+    padding: 16px;
+    align-items: flex-end;
+}
+
+.header__logo {
+    width: 64px;
+}
+
+.header__input {
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    padding:4px 8px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+input {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+} 
+
+.button, .summary, .price {
+    background-color: grey;
+}
+
+.footer {
+    text-align: center;
+    background: grey;
+    padding: 16px;
+}
+
+.footer-nav {
+    text-align: left; 
+    text-shadow: 2px 5px 2px black;
+}
+
+.footer-title {
+    color: white;
+    text-shadow: 2px 5px 2px black;
+}
+
+@media (max-width: 576px) {
+    #app {
+        background: linear-gradient(#232323, #131313);
+    }
+
+    .header, .nav, .product{
+        flex-direction: column;
+        min-width: 320px;
+        text-align: center;
+        align-items: start;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
